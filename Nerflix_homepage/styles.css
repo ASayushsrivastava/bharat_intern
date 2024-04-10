@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('background_image.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.header {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.header img {
+    height: 45px; /* Adjust height as needed */
+}
+
+.login-btn {
+    height: 40px;
+    width: 100px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.text-container {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.text-container h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.text-container h4 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.text-container h5 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10vh;
+}
+
+.form-container input {
+    height: 40px;
+    width: 300px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+
+.form-container button {
+    height: 40px;
+    width: 150px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+.downlogin-btn-container {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.downlogin-btn {
+    height: 40px;
+    width: 150px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.downlogin-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.header {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    padding: 0 3rem;
+}
+
+.header .logo-container {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.header img {
+    height: 45px; /* Adjust height as needed */
+}
+
+.login-btn {
+    height: 40px;
+    width: 100px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px; /* Add margin */
+}
+
+.language-btn {
+    height: 40px;
+    width: 100px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px; /* Add margin */
+}
+
+.language-btn:hover {
+    background-color: #fff;
+    color: #000;
+}

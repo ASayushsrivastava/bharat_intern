@@ -1,0 +1,351 @@
+/* Reset some default browser styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #f8f9fa; /* light gray */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Change font */
+}
+
+/* Style the header */
+.header_section {
+    background-color: #343a40; /* dark gray */
+    color: #ffffff; /* white */
+    padding: 20px 0;
+}
+
+.header_section .container {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #ffffff; /* white */
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #cccccc; /* light gray */
+}
+
+/* Style the main content */
+#main {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#page {
+    background-color: #ffffff; /* white */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    padding: 20px;
+    max-width: auto;
+    max-height: fit-content;
+    margin: 0 auto;
+    display: flex; /* Set the container to use flexbox */
+}
+
+#page img {
+    flex: 1; /* Take up equal space in the container */
+    max-width: 80%; /* Limit the width of the image */
+    height: 500px; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+    transition: transform 0.3s ease; /* Add transition for smooth zoom effect */
+}
+
+#page img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+#text {
+    flex: 1; /* Take up equal space in the container */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+#text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#text h2 {
+    font-size: 24px;
+    color: #007bff; /* blue */
+    margin-bottom: 20px;
+}
+
+#text h4 {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333; /* dark gray */
+    margin-bottom: 20px;
+}
+
+#button {
+    margin-top: 20px;
+}
+
+#b2 {
+    background-color: #007bff; /* blue */
+    color: #ffffff; /* white */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#b2:hover {
+    background-color: #0056b3; /* darker blue */
+}
+
+#b2 a {
+    color: #ffffff; /* white */
+    text-decoration: none;
+}
+
+
+/* Style the page1 container */
+#page1 {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    padding: 50px 0; /* Add padding for spacing */
+    background-color: #59a3df; /* Similar color to index page */
+}
+
+/* Style the right side of the page */
+#right {
+    width: 50%; /* Take up half of the container width */
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Style the skills box */
+#skills-box {
+    position: relative;
+    width: 100%;
+    background-color: #ffffff; /* white */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    padding: 20px; /* Add padding for spacing */
+    margin-bottom: 20px; /* Add margin between boxes */
+    text-align: center; /* Center align text */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+#skills-box h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #ffffff; /* Eye-catching color */
+    position: relative;
+    z-index: 2; /* Ensure the text is above the image */
+}
+
+#skills-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('skills.jpg'); /* Set background image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Apply blur effect */
+    transition: filter 0.3s ease; /* Add transition for smoother effect */
+    z-index: 1; /* Set a lower z-index than the text */
+}
+
+#skills-box:hover #skills-image {
+    filter: blur(10px); /* Increase blur effect on hover */
+}
+
+/* Style the text within the right side */
+#text1 {
+    padding: 0 20px; /* Add padding for spacing */
+    text-align: center; /* Center align text */
+}
+
+#text1 h4 {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff; /* Dark gray for elegant look */
+    margin-bottom: 20px;
+}
+
+/* Style the left side of the page */
+#left {
+    width: 50%; /* Take up half of the container width */
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the box elements within the left side */
+.box {
+    width: 80%; /* Set width of box */
+    background-color: #ffffff; /* white */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    padding: 20px; /* Add padding for spacing */
+    margin-bottom: 20px; /* Add margin between boxes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smoother effects */
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Move box up slightly on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+}
+
+.box h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333; /* dark gray */
+}
+#left hr {
+    width: 80%; /* Set width of line */
+    margin: 20px 0; /* Add margin for spacing */
+    border: none; /* Remove default border */
+    border-top: 4px solid #000000; /* Add top border */
+}
+
+/* CSS for Project Divs */
+.project {
+    display: inline-block;
+    width: calc(30% - 40px); /* Adjust width of each project div */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Center align text */
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+    width: 150px; /* Adjust image width */
+    height: 150px; /* Adjust image height */
+    border-radius: 5px;
+}
+
+.project a {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Color of project links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #007bff; /* Hover color for project links */
+}
+
+/* CSS for Page 2 */
+#page2 {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+#page2 h1 {
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#page2 h1::before,
+#page2 h1::after {
+    content: "";
+    display: inline-block;
+    width: calc(30% - 50px); /* Adjust the width to stop before and after the title */
+    height: 1px;
+    background-color: #000; /* Color of horizontal lines */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#page2 h1::before {
+    left: 0;
+}
+
+#page2 h1::after {
+    right: 0;
+}
+
+#page2 .project {
+    width: calc(30% - 40px); /* Adjust width of each project div */
+}
+
+/* Hide descriptions by default */
+.description {
+    display: none;
+}
+
+/* Style Read More button */
+.read-more {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#page3 {
+    text-align: center;
+    background-color: #094f6b; /* Changed background color to 094f6b */
+    color: #ffffff; /* Changed font color to white */
+    padding: 20px;
+    position: relative;
+    height: 300px; /* Adjust as needed */
+    overflow: hidden; /* Hide overflowing bubbles */
+}
+
+#get-in-touch {
+    font-weight: bold;
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact {
+    margin: 0 20px;
+}
+
+.contact h2 {
+    font-weight: bold;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #ffffff; /* Changed font color to white */
+}
